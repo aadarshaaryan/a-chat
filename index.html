@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Socket Chat</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-<div class="chat-container">
-  <div id="messages" class="messages"></div>
-
-  <div class="input-box">
-    <input id="msgInput" placeholder="Type message..." />
-    <button onclick="sendMessage()">Send</button>
-  </div>
+<div id="emojiBox">
+  <img src="mail.png" class="emoji" onclick="addEmoji('mail.png')">
+  <img src="youtube.png" class="emoji" onclick="addEmoji('youtube.png')">
+  <img src="https://i.pinimg.com/originals/ac/d5/5c/acd55c451c33ddf211e5655731495d5d.png" class="emoji" onclick="addEmoji('https://i.pinimg.com/originals/ac/d5/5c/acd55c451c33ddf211e5655731495d5d.png')">
+  <img src="https://tse3.mm.bing.net/th/id/OIP.hlz4D-bxfDWfqv56HGEFogHaGF?rs=1&pid=ImgDetMain&o=7&rm=3.png" class="emoji" onclick="addEmoji('https://tse3.mm.bing.net/th/id/OIP.hlz4D-bxfDWfqv56HGEFogHaGF?rs=1&pid=ImgDetMain&o=7&rm=3.png')">
+  <img src="https://tse2.mm.bing.net/th/id/OIP.cigLR3b5PHiLS9ocyoiGhQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3.png" class="emoji" onclick="addEmoji('https://tse2.mm.bing.net/th/id/OIP.cigLR3b5PHiLS9ocyoiGhQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3.png')">
+  <img src="https://tse3.mm.bing.net/th/id/OIP.X_Ly-zf6v1DDNGsXvD-G9gAAAA?w=300&h=357&rs=1&pid=ImgDetMain&o=7&rm=3.png" class="emoji" onclick="addEmoji('https://tse3.mm.bing.net/th/id/OIP.X_Ly-zf6v1DDNGsXvD-G9gAAAA?w=300&h=357&rs=1&pid=ImgDetMain&o=7&rm=3.png')">
+  <img src="https://tse2.mm.bing.net/th/id/OIP.WHcfa6_pNbs6ijiyEthF5AHaIz?rs=1&pid=ImgDetMain&o=7&rm=3.png" class="emoji" onclick="addEmoji('https://tse2.mm.bing.net/th/id/OIP.WHcfa6_pNbs6ijiyEthF5AHaIz?rs=1&pid=ImgDetMain&o=7&rm=3.png')">
+  <img src="https://img.freepik.com/premium-vector/cartoon-face-vector-icon-guilty-hangdog-emoji_8071-15340.jpg?w=1380.png" class="emoji" onclick="addEmoji('https://img.freepik.com/premium-vector/cartoon-face-vector-icon-guilty-hangdog-emoji_8071-15340.jpg?w=1380.png')">
+  <img src="https://tse4.mm.bing.net/th/id/OIP.6PzAH-eu8s7nGKxZxdGaPQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3.png" class="emoji" onclick="addEmoji('https://tse4.mm.bing.net/th/id/OIP.6PzAH-eu8s7nGKxZxdGaPQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3.png')">
+  <img src="https://i.pinimg.com/originals/c7/f2/0b/c7f20b21561d0a8aeb151b7fa3bb6949.png.png" class="emoji" onclick="addEmoji('https://i.pinimg.com/originals/c7/f2/0b/c7f20b21561d0a8aeb151b7fa3bb6949.png.png')">
+  <img src="https://tse1.mm.bing.net/th/id/OIP.NAHgFQ_SK4I5zAqt-GHpiwHaHw?w=955&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3.png" class="emoji" onclick="addEmoji('https://tse1.mm.bing.net/th/id/OIP.NAHgFQ_SK4I5zAqt-GHpiwHaHw?w=955&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3.png')">
+  <img src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/happy-cartoon-face-vector-illustration_mkwW-M_SB_PM.jpg.png" class="emoji" onclick="addEmoji('https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/happy-cartoon-face-vector-illustration_mkwW-M_SB_PM.jpg.png')">
+  <img src="https://tse2.mm.bing.net/th/id/OIP.PTNhUViYWslmp7b5PqKeswHaHa?rs=1&pid=ImgDetMain&o=7&rm=3.png" class="emoji" onclick="addEmoji('https://tse2.mm.bing.net/th/id/OIP.PTNhUViYWslmp7b5PqKeswHaHa?rs=1&pid=ImgDetMain&o=7&rm=3.png')">
+  <img src="WhatsApp Image 2026-02-19 at 8.21.17 PM.jpeg" class="emoji" onclick="addEmoji('WhatsApp Image 2026-02-19 at 8.21.17 PM.jpeg')">
 </div>
+  <div class="chat-container">
+    <div id="messages" class="messages"></div>
 
-<script src="/socket.io/socket.io.js"></script>
-<script src="client.js"></script>
+    <div class="input-box">
+      <input id="msgInput" placeholder="Type message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
 
 </body>
+
 </html>
