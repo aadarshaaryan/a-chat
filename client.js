@@ -1,14 +1,14 @@
-// Try to get from localStorage first
-let username = localStorage.getItem("username") || prompt("Enter your name:");
+// // Try to get from localStorage first
+// let username = localStorage.getItem("username") || prompt("Enter your name:");
 
-// Save it for next refresh
-localStorage.setItem("username", username);
+// // Save it for next refresh
+// localStorage.setItem("username", username);
 
-// Save last messages
-localStorage.setItem("messages", messagesDiv.innerHTML);
+// // Save last messages
+// localStorage.setItem("messages", messagesDiv.innerHTML);
 
-// Restore on load
-messagesDiv.innerHTML = localStorage.getItem("messages") || "";
+// // Restore on load
+// messagesDiv.innerHTML = localStorage.getItem("messages") || "";
 
 
 
